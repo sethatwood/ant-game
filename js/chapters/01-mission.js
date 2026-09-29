@@ -205,6 +205,7 @@ getHost("https://wasp.net/hive")
           <p>You did a <strong>breadth-first search</strong>, or BFS. “Breadth-first” because the queue makes you finish everything close to the entrance before going deeper: first the entrance, then everything one tunnel away, then everything two tunnels away, and so on, level by level.</p>
           <p>Here it is as code. In JavaScript an array works as a queue: <code>push</code> adds to the back and <code>shift</code> removes from the front. A <code>Set</code> is a collection that can answer “have I seen this?” quickly with <code>has</code>, and remember something with <code>add</code>.</p>
           ${code(`
+const host = getHost(startUrl);     // our colony's name: "anthill.org"
 const seen = new Set([startUrl]);   // scent marks
 const queue = [startUrl];           // order slips
 
