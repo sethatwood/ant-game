@@ -38,7 +38,7 @@
 
 * { box-sizing: border-box; }
 
-code, pre, textarea, .slip, .chip { font-variant-ligatures: none; font-feature-settings: 'calt' 0, 'liga' 0; }
+
 
 body {
   margin: 0;
@@ -526,7 +526,7 @@ pre.code[data-label]::before {
 .el-pre { margin: 0; padding: 12px 8px; font-size: 13px; }
 .el-code { margin: 0; padding-left: 2.2em; color: #a3907b; }
 .el-code li { padding: 1px 6px; border-radius: 4px; }
-.el-code li code { color: #f1e2c0; font: inherit; white-space: pre; }
+.el-code li code { color: #f1e2c0; font: inherit; white-space: pre-wrap; overflow-wrap: anywhere; }
 .el-code li.cur { background: rgba(243, 228, 189, 0.2); box-shadow: inset 3px 0 0 #f0a857; }
 .el-note { margin: 12px 0 0; font-size: 0.98rem; min-height: 5em; }
 .el-right { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-content: start; }
@@ -716,3 +716,10 @@ pre.code[data-label]::before {
 
 .farm-svg .hidden { opacity: 0 !important; }
 [tabindex='-1']:focus { outline: none; }
+
+/* Code must show exactly what was typed: no => arrow ligatures. Declared
+   last and !important because every `font` shorthand above resets it. */
+code, pre, textarea, .slip, .chip, .editor * {
+  font-variant-ligatures: none !important;
+  font-feature-settings: 'liga' 0, 'calt' 0 !important;
+}
