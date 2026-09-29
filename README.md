@@ -67,25 +67,7 @@ Progress and the code you write are saved in your browser. "Reset my progress" o
 
 ## The path through the colony
 
-Every chapter adds one piece, and the last two chapters put them together.
-
-```mermaid
-flowchart TD
-    A["Chapter 1: The colony's mission<br/>queue, seen-set, BFS"] --> B["Chapter 2: Waiting isn't thinking<br/>one thread, many waits"]
-    B --> C["Chapter 3: The brain's to-do list<br/>event loop and turns"]
-    C --> D["Chapter 4: Order slips<br/>promises, async/await"]
-    D --> E["Chapter 5: Two ants, one chamber<br/>race conditions, atomic turns"]
-    E --> F["Chapter 6: The storeroom key<br/>lost updates, mutexes"]
-    F --> G["Chapter 7: The job board<br/>worker pools, knowing when you're done"]
-    G --> H["Chapter 8: The nursery<br/>condition variables"]
-    H --> I["Chapter 9: The great crawl<br/>the concurrent web crawler"]
-    I --> J["Chapter 10: Beyond one brain<br/>threads, locks, atomics, Python"]
-
-    classDef learn fill:#f3e4bd,stroke:#b58b4c,color:#2b1c12
-    classDef boss fill:#3e8c3b,stroke:#2c6a2a,color:#ffffff
-    class A,B,C,D,E,F,G,H,J learn
-    class I boss
-```
+Every chapter adds one piece. Chapter 9 puts them together, and chapter 10 carries them over to threads.
 
 | # | Chapter | You play | You write |
 |---|---|---|---|
