@@ -5,7 +5,7 @@
 (function () {
   const { h, s } = AG;
   const app = document.getElementById('app');
-  const GAME = 'One Brain, Many Legs';
+  const GAME = 'concurrANTcy';
 
   function nextChapter() {
     return AG.chapters.find(c => AG.progress.chapterState(c) !== 'done');

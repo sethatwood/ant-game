@@ -1,4 +1,4 @@
-<h1 align="center">🐜 One Brain, Many Legs</h1>
+<h1 align="center">🐜 concurrANTcy</h1>
 
 <p align="center"><strong>A browser game that teaches concurrency in JavaScript, played with an ant colony.</strong></p>
 
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="screenshots/home.png" alt="The home screen: the title 'One brain, many legs' beside an ant farm whose tunnel winds down through numbered chambers, one per chapter" width="880">
+  <img src="screenshots/home.png" alt="The concurrANTcy home screen: the headline 'One brain, many legs' beside an ant farm whose tunnel winds down through numbered chambers, one per chapter" width="880">
 </p>
 
 Your colony needs a map of every chamber in its nest. You have a handful of worker ants and **one brain that they all share**, which is exactly how JavaScript works: one thread runs your code, while any number of waits happen at once. Starting from nothing, the game builds up to the concurrent web crawler asked about in real interviews, and makes sure you know why every line of it is there.
