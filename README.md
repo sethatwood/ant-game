@@ -2,6 +2,8 @@
 
 <p align="center"><strong>A browser game that teaches concurrency in JavaScript, played with an ant colony.</strong></p>
 
+<p align="center"><a href="https://sethatwood.github.io/concurrantcy/"><strong>▶ Play it in your browser</strong></a></p>
+
 <p align="center">
   <img alt="Ten chapters" src="https://img.shields.io/badge/chapters-10-3e8c3b">
   <img alt="Plain JavaScript" src="https://img.shields.io/badge/built%20with-plain%20JavaScript-6b4423">
@@ -19,9 +21,11 @@ Each chapter explains one idea, lets you poke at it until it clicks, then asks y
 
 ## Play
 
-Open `index.html` in a browser. That's it: no install, no build, no server.
+Play online at **https://sethatwood.github.io/concurrantcy/**. Nothing to install or sign up for.
 
-If your browser won't run the code challenges from a `file://` page, serve the folder instead with `python3 -m http.server` and visit http://localhost:8000.
+To run it from your own copy, open `index.html` in a browser: no install, no build, no server. If your browser won't run the code challenges from a `file://` page, serve the folder instead with `python3 -m http.server` and visit http://localhost:8000.
+
+Tested in Chrome. It uses only standard browser features, so other modern browsers should work too.
 
 Progress and the code you write are saved in your browser. "Reset my progress" on the home page clears them.
 
