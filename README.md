@@ -99,3 +99,7 @@ Plain HTML, CSS and JavaScript loaded as classic `<script>` tags, so the game wo
 - `js/runner.js`: runs player code and tests in a Web Worker, so a stuck loop can be stopped without freezing the page
 - `js/challenge.js`: the code editor and test results
 - `js/chapters/`: one file per chapter
+
+## License
+
+[MIT](LICENSE). Use it, fork it, teach with it.
